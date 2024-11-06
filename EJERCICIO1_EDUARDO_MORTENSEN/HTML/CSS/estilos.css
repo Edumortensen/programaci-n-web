@@ -1,12 +1,12 @@
 body {
-    background-color: black; /* Fondo negro */
-    color: yellow; /* Texto amarillo */
-    font-family: Arial, sans-serif; /* Fuente */
-    margin: 20px; /* Espaciado alrededor del contenido */
-    text-align: justify; /* Justifica el texto de los párrafos */
+    background-color: black; 
+    color: yellow; 
+    font-family: Arial, sans-serif; 
+    margin: 20px; 
+    text-align: justify; 
 }
 
 h1, h2 {
-    color: yellow; /* Asegura que los encabezados también sean amarillos */
-    text-align: center; /* Centra los encabezados */
+    color: yellow; 
+    text-align: center;
 }
