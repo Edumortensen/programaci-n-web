@@ -1,0 +1,12 @@
+body {
+    background-color: red; 
+    color: yellow; 
+    font-family: Arial, sans-serif; 
+    margin: 20px;
+    text-align: justify;
+}
+
+h1, h2 {
+    color: yellow; /* Asegura que los encabezados también sean amarillos */
+    text-align: center; /* Centra los encabezados */
+}
