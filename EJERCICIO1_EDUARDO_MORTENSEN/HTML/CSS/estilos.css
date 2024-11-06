@@ -18,3 +18,17 @@ ul{
 ol{
     color: white;
 }
+
+dt{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: greenyellow;
+}
+
+dl{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:aqua;
+}
+dd{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:blue;
+}
