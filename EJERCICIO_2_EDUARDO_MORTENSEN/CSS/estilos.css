@@ -1,0 +1,86 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    font: size 24px;
+    text-align: center;
+    color: black;
+    background-color:whitesmoke;
+    max-width: 600px;
+    margin:0 auto;
+}
+h1
+{
+    text-align: center;
+    font-family: cursive;
+}
+h2
+{
+    text-align: center;
+    font-family: cursive;
+}
+
+.photo
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.containerul
+{
+    text-align: center;
+}
+
+.container
+{
+    text-size-adjust: 24px;
+    max-width: 600px;
+    margin:0 auto;
+}
+
+footer
+{
+    text-size-adjust: 34px;
+    border: 5px;
+    padding: 10px;;
+    background-color: aqua;
+    text-align: center;
+    max-width: 600px;
+    margin:0 auto;
+}
+
+.redesSociales
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font: size 26px;
+    color:chartreuse;
+    text-align: left;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+
+
+
+
+
+ul li {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+    text-align: center;
+    font-size: small;
+  
+}
+
+#redessociales {
+    font-size: 12px;
+    text-align: center;
+}
+
+.container
+{
+max-width: 700px;
+margin: 0 auto;
+text-align: justify;
+}
