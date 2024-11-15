@@ -5,96 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Comida Mexicana</title>
     <link rel="stylesheet" href="CSS/estilos.css">
-    
 </head>
 <body>
- <div>
-    <section>
-        <header>
-            <center>
-            <nav>
-                <a href="inicio.html">INICIO</a>
-                <a href="MENU.html">MENU</a>
-                <a href="MAS.html">MÁS</a>
-            </nav>
-                <h1> Blog de Comida Mexicana </h1>
-            </center>
-        </header>
-        <center>
-        Buscar:<input type="text" id="buscar" name="buscar">
+    <header>
+        <nav style="text-align: center;">
+            <a href="inicio.html">INICIO</a>
+            <a href="MENU.html">MENU</a>
+            <a href="MAS.html">MÁS</a>
+        </nav>
+        <h1 style="text-align: center;">Blog de Comida Mexicana</h1>
+    </header>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <label for="buscar">Buscar:</label>
+        <input type="text" id="buscar" name="buscar" placeholder="Buscar">
         <button id="botonBuscar">Buscar</button>
-    </center>
-        <p>
-            <center> 
-                Comida <strong> tacos y enchiladas hasta mole y churros, aquí encontrarás recetas </strong> , historias y curiosidades sobre tus platos favoritos.
-            </center>
-        </p>
-        <h2>
-            <a href="https://www.mexicoenmicocina.com/receta-tacos-al-pastor/" style="color: yellow;">Tacos al Pastor</a>
-        </h2>
+    </div>
+
+    <main style="max-width: 800px; margin: auto;">
+        <section>
+            <p style="text-align: center;">
+                Comida <strong>tacos y enchiladas hasta mole y churros, aquí encontrarás recetas</strong>, historias y curiosidades sobre tus platos favoritos.
+            </p>
+
+            <h2 style="color: yellow; text-align: center;">
+                <a href="https://www.mexicoenmicocina.com/receta-tacos-al-pastor/">Tacos al Pastor</a>
+            </h2>
+            
+            <figure style="text-align: center;">
+                <img src="IMAGES/tacosalpastor.jpeg" alt="Tacos al Pastor" width="400">
+                <figcaption>TACOS AL PASTOR</figcaption>
+                <button class="button">Visitar página</button>
+            </figure>
+
+            <p class="estilop" style="text-align: center;">
+                Los tacos al pastor son uno de los platillos más icónicos de México. Hechos con carne de cerdo marinada en achiote y cocinados en un trompo, se sirven en tortillas de maíz con cebolla, cilantro y piña.
+            </p>
+
+            <dl>
+                <dt id="caracteristicas">Ingredientes para las Enchiladas</dt>
+                <dd>1 kg de carne de cerdo (lomo o pierna, en rebanadas delgadas)</dd>
+                <dd>4 chiles guajillo (sin semillas y remojados en agua caliente)</dd>
+                <dd>2 chiles anchos (sin semillas y remojados en agua caliente)</dd>
+                <dd>1/4 de taza de vinagre blanco</dd>
+                <dd>1/4 de taza de jugo de piña (opcional)</dd>
+                <dd>2 dientes de ajo</dd>
+                <dd>1/4 de cebolla blanca</dd>
+                <dd>1 cucharadita de orégano seco</dd>
+                <dd>1 cucharadita de comino en polvo</dd> 
+                
+                <dt>Recomendaciones</dt>
+                <dd>Mantener precalentado el horno</dd>
+                <dd>Limpiar los utensilios</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2 style="color: yellow; text-align: center;">
+                <a href="https://www.mexicoenmicocina.com/receta-de-enchiladas-rojas/">Enchiladas</a>
+            </h2>
+
+            <figure style="text-align: center;">
+                <a href="https://www.mexicoenmicocina.com/receta-de-enchiladas-rojas/">
+                    <img src="IMAGES/enchiladas.jpeg" alt="Enchiladas" width="400">
+                </a>
+            </figure>
+
+            <p class="container" style="text-align: center;">
+                Las enchiladas son tortillas de maíz rellenas de pollo, queso o frijoles, bañadas en una salsa de chile rojo o verde. Se acompañan a menudo con crema, cebolla y queso fresco.
+            </p>
+
+            <h4>Ingredientes para las Enchiladas</h4>
+            <ul>
+                <li><span class="d">Tortillas de maíz</span></li>
+                <li>2 pechugas <em>de pollo cocidas</em> y desmenuzadas</li>
+                <li>1 taza de queso rallado (queso fresco o queso Oaxaca)</li>
+                <li>1/2 taza de crema agria</li>
+                <li>1/4 de taza de cebolla blanca picada</li>
+                <li>Aceite vegetal (para freír las tortillas)</li>
+            </ul>
+
+            <h2>Conéctate Conmigo</h2>
+            <p>
+                Sígueme en mis redes sociales para más recetas y actualizaciones: <a href="https://www.instagram.com" target="_blank">Instagram</a>.
+            </p>
+        </section>
+    </main>
+
+    <aside class="ad">
+    <section>
+        <h2>Promoción de Comida Mexicana</h2>
+        <p>¡Disfruta de una deliciosa combinación mexicana! Prueba nuestro combo especial:</p>
+        <ul>
+            <li>2 tacos al pastor</li>
+            <li>1 enchilada de pollo</li>
+            <li>1 bebida de tu elección</li>
+        </ul>
+        <p>Solo por <strong>$9.99</strong>. ¡Oferta válida hasta el 30 de noviembre!</p>
         <figure>
-        <center>
-            <img src="IMAGES/tacosalpastor.jpeg" alt="Tacos al Pastor" width="400">
-            <figcaption>TACOS AL PASTOR</figcaption>
-        <button class="button">Visitar pagina</button>
-    </center>
-    </figure>
-        <p   class="estilop">
-            <center>
-                 Los tacos al pastor son uno de los platillos más icónicos de México. Hechos con carne de cerdo marinada en achiote y cocinados en un trompo, se sirven en tortillas de maíz con cebolla, cilantro y piña.
-            </center>
-        </p>
-        <dl>
-            <dt id="caracteristicas"> Ingredientes para las Enchiladas </dt>
+            <img id="promo1" src="IMAGES/Venta (1).png" alt="Promoción de comida mexicana" width="300" height="200">
+            <figcaption>Combo especial mexicano</figcaption>
+        </figure>
+    </section>
+    <section>
+        <figure>
+            <img id="promo1" src="IMAGES/Venta (2).png" alt="Promoción de comida mexicana" width="300" height="200">
+            <figcaption>Enchiladas</figcaption>
+        </figure>
+    </section>
+    </aside>
 
-            <dd>1 kg de carne de cerdo (lomo o pierna, en rebanadas delgadas)</dd>
-            <dd>4 chiles guajillo (sin semillas y remojados en agua caliente)</dd>
-            <dd>2 chiles anchos (sin semillas y remojados en agua caliente)</dd>
-            <dd>1/4 de taza de vinagre blanco</dd>
-            <dd>1/4 de taza de jugo de piña (opcional)</dd>
-            <dd>2 dientes de ajo</dd>
-            <dd>1/4 de cebolla blanca</dd>
-            <dd>1 cucharadita de orégano seco</dd>
-            <dd>1 cucharadita de comino en polvo</dd> 
-
-            <dt> Recomendaciones </dt>
-            <dd>Mantener precalentado el horno</dd>
-            <dd>Limpiar los utensillos</dd>
-        </dl>
-</section>
-
-<section> 
-    <h2>
-        <a href="https://www.mexicoenmicocina.com/receta-de-enchiladas-rojas/" style="color: yellow;">Enchiladas</a>
-    </h2>
-    <figure>
-    <center>
-        <a href="https://www.mexicoenmicocina.com/receta-de-enchiladas-rojas/" style="color: yellow;"><img src="IMAGES/enchiladas.jpeg" alt="Enchiladas" width="400"></a>
-    </center>
-</figure>
-    <p class="container">
-    <center>
-        Las enchiladas son tortillas de maíz rellenas de pollo, queso o frijoles, bañadas en una salsa de chile rojo o verde. Se acompañan a menudo con crema, cebolla y queso fresco.
-    </center>
-    </p>
-    <h4>
-        Ingredientes para las Enchiladas
-    </h4>
-    <ul>
-        <li><span class="d"> tortillas de maíz </span></li>
-        <li>2 pechugas <em>de pollo cocidas </em> y desmenuzadas</li>
-        <li>1 taza de queso rallado (queso fresco o queso Oaxaca)</li>
-        <li>1/2 taza de crema agria</li>
-        <li>1/4 de taza de cebolla blanca picada</li>
-        <li>Aceite vegetal (para freír las tortillas)</li>
-    </ul>
-
-    <h2>Conéctate Conmigo</h2>
-    <p>
-        Sígueme en mis redes sociales para más recetas y actualizaciones: <a href="https://www.instagram.com" target="_blank">Instagram</a>.
-    </p>
-</section>
-<footer> <p>  Copyright 2024  </p></footer>
-</div>
+    <footer style="text-align: center; margin-top: 20px;">
+        <p>Copyright 2024</p>
+    </footer>
 </body>
 </html>
+
