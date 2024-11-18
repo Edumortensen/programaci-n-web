@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Básica</title>
+    <link rel="stylesheet" href="CSS/tablaestilo.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Ejemplo de Tabla en HTML5</h1>
+    <table style="border: 3px solid; cellspacing: 10px;" rules="all" frame="box">
+        <caption>Información de Personas</caption>
+        <colgroup>
+            <col style="background-color: antiquewhite;">
+            <col style="background-color: bisque;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Nombre</th> 
+                <th>Apellidos</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Santiago</td>
+                <td>Pérez</td>
+                <td>25-ECQ Conocoto</td>
+                <td>0976473225</td>
+            </tr>
+            <tr>
+                <td>Karla</td>
+                <td>Pozo</td>
+                <td>25-ECQ Valle</td>
+                <td>0976473225</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" style="text-align: center;">Total de personas: 2</td> <!-- Corregido -->
+            </tr>
+        </tfoot>
+    </table>
+
+    <div>
+        <form action="/submit" method="POST">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required placeholder="Introduce tu nombre" maxlength="5"><br><br>
+
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required placeholder="Introduce tu correo electrónico" maxlength="10"><br><br>
+
+            <label for="pais">Selecciona tu país:</label><br>
+            <select id="pais" name="pais" required>
+                <option value="" disabled selected>Elige un país</option>
+                <option value="ecuador">Ecuador</option>
+                <option value="peru">Perú</option>
+                <option value="colombia">Colombia</option>
+                <option value="chile">Chile</option>
+            </select><br><br>
+
+            <label for="contraseña">Contraseña:</label><br>
+            <input type="password" id="contraseña" name="contraseña" required placeholder="Introduce tu contraseña" maxlength="20"><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
