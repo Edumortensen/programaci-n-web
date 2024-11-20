@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="CSS/login.css">
+</head>
+<body>
+
+    
+    <div class="login-container">
+        <figure>
+            <img src="IMAGENES/Captura de pantalla 2024-11-20 111958.png"  alt="IMAGEN" id="photo1">
+            <figcaption>USER</figcaption>
+    </figure>
+        <h2>Login</h2>
+        <form action="/submit" method="POST">
+            <label for="usuario-id">ID DE USUARIO</label>
+            <input type="text" id="usuario-id" class="boton1" name="user-id" placeholder="User ID" required>
+            
+            <label for="password">INGRESAR CONTRASEÑA</label>
+            <input type="password" id="password" class="boton2" name="password" placeholder="Enter Password" required>
+            
+            <div class="recuerdame">
+                <input type="checkbox" name="remember-password">
+                <label for="remember-password">RECORDAR CONTRASEÑA</label>
+            </div>
+            <a href="tienda.html">
+            <button type="button">LOGIN</button></a>
+        </form>
+    </div>
+</body>
+</html>

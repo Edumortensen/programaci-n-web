@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<header>
+    <nav>
+        <table style="border: 3px solid; cellspacing:10px;" rules="all" frame="box">
+            <tr>
+                <td><a href="#inicio">Inicio</a></td>
+                <td><a href="#nosotros">Nosotros</a></td>
+                <td><a href="#servicios">Servicios</a></td>
+                <td><a href="#contacto">Contacto</a></td>
+                <td><a href="#blog">Blog</a></td>
+            </tr>
+        </table>
+    </nav>
+<title>MI SITIO DE PRUEDA</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="CSS/estilosprueba.css">
+</header>
+<body>
+
+<div class="container">
+    <aside class="rightaside">
+        <form action=" /submit" method="POST">
+            <label for="nombre">NOMBRE</label><br>
+                <input type="text" name="nombre" id="nombre" required placeholder="INGRESE NOMBRE" maxlength="10"><br><br>
+            <label for="telefono">TELEFONO</label><br>
+                <input type="number" name="telefono" id="telefono" required placeholder="INGRESE TELEFONO" maxlength="9"><br><br>
+            <label for="direccion">DIRECCION</label><br>
+                <input type="textarea" name="direccion" id="direccion" required placeholder="INGRESE DIRECCIÓN" maxlength="50"><br><br>
+            <label for="contraseña">CONTRASEÑA</label><br>
+                <input type="password" name="contraseña" id="contraseña" required placeholder="INGRESE CONTRASEÑA" maxlenght="10"><br><br>
+            <label for="email">EMAIL</label><br>
+                <input type="email" name="email" id="email" required placeholder="INGRESE EMAIL"maxlenght="15"><br><br>
+            <label for="pais">PAIS</label>
+                <select name="pais" id="pais">
+                    <option value="">SELECIONE</option>
+                    <option value="Ecuador">ECUADOR</option>
+                    <option value="Colombia">COLOMBIA</option>
+                    <option value="Peru">PERU</option>
+                </select>
+        </form>
+    </aside>
+
+    <main>
+        <section>
+            <h1>PRUEBA DE HOJA</h1>
+            <h2>EJEMPLO</h2>
+            <p>NOFVBGEFS EBWSG ERW</p>
+            <figure>
+                <a href="www.google.com">
+                    <img src="IMAGES/images.jpeg"  alt="IMAGEN" id="photo1">
+                    <figcaption>IMAGEN</figcaption>
+                </a>
+            </figure>
+            <ul>
+                <li>qqqqqqqqqqq</li>
+                <li>aaaaaaaaaaa</li>
+                <li>bbbbbbbbbbb</li>
+            </ul>
+            <dl>
+                <dt>AAAAAAAAAAAAA</dt>
+                <dd>aaaaaaaaaaaa</dd>
+                <dd>bbbbbbbbbbbb</dd>
+                <dt>BBBBBBBBBBBBB</dt>
+                <dd>qqqqqqqqqqqqq</dd>
+                <dd>wwwwwwwwwwwww</dd>
+            </dl>
+        </section>
+            <table style="border: 3px solid; cellspacing: 10px;" rules="all" frame="box">
+                <caption>Información de Personas</caption>
+                <colgroup>
+                    <col style="background-color: antiquewhite;">
+                    <col style="background-color: bisque;">
+                    <col style="background-color:blue">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Nombre</th> 
+                        <th>Apellidos</th>
+                        <th>Dirección</th>
+                        <th>Teléfono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Santiago</td>
+                        <td>Pérez</td>
+                        <td>25-ECQ Conocoto</td>
+                        <td>0976473225</td>
+                    </tr>
+                    <tr>
+                        <td>Karla</td>
+                        <td>Pozo</td>
+                        <td>25-ECQ Valle</td>
+                        <td>0976473225</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" style="text-align: center;">Total de personas: 2</td> 
+                    </tr>
+                </tfoot>
+        </table>
+
+    </main>
+    <aside class="leftaside">
+        <table style="border:3px solid; cellspacing:10px" rules="all" frame="box">
+            <thead>
+                <tr>
+                    <td>aaaaaaaaaaa</td>
+                    <td>aaaaaaaaaaa</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>qqqqqqqqqq</td>
+                    <td>aaaaaaaaaa</td>
+                </tr>
+                <tr>
+                    <td>wwwwwwwwww</td>
+                    <td>ssssssssss</td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="1" style="border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <td>qqqqqqqqqqq</td>
+                    <td colspan="2">qqqqqqqqqqq</td>
+                    <td>22222222222</td>
+                </tr>
+
+            </thead>
+            <tbody>
+            <tr>
+                <td rowspan="5" style="width: 100px; height: 200px;">a</td> <!-- Celda izquierda que abarca 5 filas -->
+                <td colspan="2" style="width: 200px; height: 40px;">b</td> <!-- Celda superior que abarca 2 columnas -->
+                <td rowspan="3" style="width: 100px; height: 200px;">c</td> <!-- Celda derecha que abarca 5 filas -->
+            </tr>
+            <tr></tr> <!-- Fila en blanco para mantener el espacio en la columna superior -->
+            <tr>
+                <td colspan="2" style="height: 40px;">d</td> <!-- Segunda fila en el centro que abarca 2 columnas -->
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 40px;">e</td> <!-- Tercera fila en el centro que abarca 2 columnas -->
+                <td rowspan="2" style="height: 40px;">g</td> 
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 40px;">f</td> <!-- Cuarta fila en el centro que abarca 2 columnas --><!-- Cuarta fila en el centro que abarca 2 columnas -->
+            </tr>
+        </tbody>
+        </table>
+        
+
+    </aside>
+</div>
+
+</body>
+
+<footer>
+    <p>--------------------------------------------------COPYRIGHT 2024-----------------------------------------------------------------</p>
+</footer>
+
+</html>
