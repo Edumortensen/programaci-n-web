@@ -31,14 +31,14 @@ figcaption
     align-items: center;
     padding: 20px;
     border-radius: 12px;
-    width: 100%;
-    max-width: 500px;
+    width: 60%;
+    max-width: 380px;
     text-align: center;
     margin: 15px 0;
 }
 
 .boton1 {
-    width: 100%;
+    width: 80%;
     padding: 14px;
     margin: 15px 0;
     border: none;
@@ -46,12 +46,12 @@ figcaption
     cursor: pointer;
     font-size: 16px;
     background-color:#a8dfaa;
-    color: white;
+    color: black;
     font-weight: bold;
 }
 
 .boton2 {
-    width: 100%;
+    width: 80%;
     padding: 14px;
     margin: 15px 0;
     border: none;
@@ -59,7 +59,7 @@ figcaption
     cursor: pointer;
     font-size: 16px;
     background-color: #a8dfaa;
-    color: white;
+    color:black;
     font-weight: bold;
 }
 
