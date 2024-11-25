@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #eef;
+}
+
+.header {
+    background-color:lightcoral;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.title {
+    font-size: 2.5em;
+}
+
+.nav-bar {
+    background-color:lightcoral;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-bar li {
+    margin: 0 15px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.articles {
+    flex: 3;
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(249, 174, 174, 0.1);
+    position: relative;
+}
+
+.date-box {
+    background-color:lightcoral;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.date-box h2 {
+    font-size: 1.8em;
+}
+
+.date-box p {
+    font-size: 1em;
+}
+
+.article-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.article-content {
+    margin-right: 10px;
+}
+
+.article-image {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.article-container img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .article-container {
+        flex-direction: column;
+    }
+
+    .article-image {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .date-box {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.sidebar {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.info-box {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
