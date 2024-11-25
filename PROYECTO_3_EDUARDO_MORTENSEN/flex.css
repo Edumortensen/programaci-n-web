@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+}
+
+body{
+    height:100%;
+    background-color: white;
+
+}
+
+.container
+{
+    display: flex ;
+    border: solid red;
+    height: 400px;
+    width: 40%;
+}
+
+.container div {
+    height: 50px;
+}
+
+.item2{
+    flex: 2 2 200px;
+    background-color: green;
+}
+
+.item1{
+    flex:1 1 100px;
+    background-color: darkblue;
+}
+
+.item3{
+    flex:1 1 100px;
+    background-color: yellow;
+}
+.item4{
+    flex:1 1 100px;
+    background-color: red;
+}
+
+
