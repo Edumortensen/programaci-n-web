@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffcff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    width: 1000px;
+    height: 500px;
+    border: 10px solid blue;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.circulo {
+    background-color: orangered;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30px; 
+    left: 0;
+    animation: volar 8s infinite, cambiocolores 3s infinite;
+}
+
+.barra {
+    background-color: green;
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    animation: moverBarra 8s linear infinite;
+}
+
+
+@keyframes cambiocolores {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: green;
+    }
+    50% {
+        background-color: blue;
+    }
+    75% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: violet;
+    }
+}
+
+
+@keyframes volar {
+    0% {
+        transform: translateX(0) translateY(10px); 
+    }
+    25% {
+        transform: translateX(200px) translateY(-400px); 
+    }
+    50% {
+        transform: translateX(530px) translateY(10px); 
+    }
+    75% {
+        transform: translateX(800px) translateY(-400px); 
+    }
+    100% {
+        transform: translateX(1000px) translateY(10px);
+    }
+}
+
+@keyframes moverBarra {
+    0% {
+        left: 0; 
+    }
+    50% {
+        left: 800px; 
+    }
+    100% {
+        left: 0; 
+    }
+}
+
