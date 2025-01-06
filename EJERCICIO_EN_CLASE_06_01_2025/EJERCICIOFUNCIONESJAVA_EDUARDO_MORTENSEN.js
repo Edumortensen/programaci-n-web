@@ -28,7 +28,7 @@ const esPar = (num) => {
         // Valores de ejemplo
         const promedio = calcularPromedio(2, 20, 30);
         console.log(`El promedio es: ${promedio}`);
-
+       
         const mayor = determinarMayor(15, 25);
         console.log(`El número mayor es: ${mayor}`);
 
