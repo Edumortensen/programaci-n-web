@@ -35,7 +35,7 @@ console.log(typeof sumar);
 
 setTimeout(function(){
     console.log('Hola desde una funcion anomina');
-},0000);
+});
 
 const persona = {
     nombre : 'Diego',
