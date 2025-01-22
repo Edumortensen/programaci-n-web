@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .azul{
+            color: blue;
+        }
+
+        .titles{
+            color: magenta;
+        }
+    </style>
+    <title>
+        MANEJO DE EVENTOS EN JAVASCRIPT
+        <!-- DOM en JS -->
+        Formularios de DOM en JS
+    </title>
+</head>
+<body onload="entrar()">
+
+    <h1 id="titulo3" onclick=mostrar(this)>EventoUnload</h1>
+    <header>
+        <!-- <h1 id="cabecera" class ="azul">Título del documento</h1>
+        <p id="parrafo" class="azul">Párrafo N°1</p>
+        <p id="parrafo2" class="azul">Párrafo N°2</p>
+        <p id="parrafo3" class="azul">Párrafo N°3</p>*/ -->
+    </header>
+
+    <!-- <form id="formulario">
+        Nombre: <input type="text" name="nombre" value="Juan">
+        <br>
+        Apellido: <input type="text" name="apellido" value="Perez">
+        <br>
+        Correo: <input type="email" name="correo" value="79545@gmail.com">
+        <br>
+    </form> -->
+    <h1 id="titulo" class="titles">Manejo de DOM en JS</h1>
+    <h1 id="titulo" class="titles">Manejo de DOM en JS</h1>
+    <button id="btnMostrar" onclick="mostrar()" type="submit">Mostrar</button>
+    <h1 id="titulo">EventoOnfocus y OnBlur</h1>
+    Nombre: <input type="text" onfocus="cambiar(this)"  onblur="regresar(this)"> 
+
+    <br>
+
+
+    <h2 id="titulo" onclick="mostrar1()">QQQQQQQQQQQQQQ</h2>
+
+
+    <button type="button" id="btnmostrar" onclick="mostrar1()">MOSTRAR</button>
+    
+
+
+
+
+    <!--<div id="valores">
+
+    </div>t -->
+    <script>
+        function cambiar(elementInput)
+    
+    function convertir(input){
+        input.value
+    }
+
+        
+    function entrar(){
+        alert('adcniqwfjciwejjfew');
+        let texto='';
+        if(navigator.cookieEnabled){
+            texto = 'cookies estan inabilitadas';
+        }else{
+            texto = 'cookies no estan inabilitadas';
+        }
+    }
+
+
+        function mostrar1(){
+            document.getElementById('titulo').innerHTML='Nuevo texto implementado'
+        }
+
+        document.getElementById('titulo').onclick = cambiarTexto;
+
+        function cambiarTexto (){
+            DocumentTimeline.getElementById('titulo').innerHTML='otro nuevo cambio en el titulo';
+        }
+
+
+
+
+
+
+
+        //document.write('Saludos desde Write!');
+        function mostrar(){
+            document.getElementById('imagen').src = '../images/DOM.png'
+            /*let elementos = document.getElementsByClassName('titles');
+            for (const element of elementos) {
+                element.innerHTML = '<br> Nuevo Título';
+            }*/
+            //document.write('Adios!');
+        }
+        /*function mostrarValores() {
+            let formulario = document.forms['formulario'];
+            let texto ='';
+
+            for (const element of formulario){
+                texto += element.value + '<br>';
+            }
+
+            document.getElementsById('valores').innerHTML = texto;
+
+            let nombre = formulario['nombre'];
+            let apellido = formulario['apellido'];
+            let correo = formulario['correo']
+
+            texto = nombre.value + '<br>' + apellido.value + '<br>' + correo.value;
+
+            document.getElementById('valores').innerHTML = texto;
+        }*/
+        /*//getElementById
+        let cabecera = document.getElementById('cabecera'); //Retornar un objeto con sus respectivos atributos
+        //console.log('Valor cabecera: ' + cabecera);
+
+        console.log(Valor cabecera; ${cabecera.innerHTML});
+
+        let parrafo = document.getElementById('parrafo');
+
+        console.log(Valor párrafo; ${parrafo.innerHTML});
+
+        parrafo.innerHTML = 'Nuevo valor de párrafo';
+        cabecera.innerHTML = 'Cambio de cabecera';
+
+        console.log(Nuevo valor párrafo; ${parrafo.innerHTML});*/
+
+        /*//getElementByTagName
+        let parrafos = document.getElementsByTagName('p');
+        console.log(N° de párrafos: ${parrafos.length});
+
+        for (const elements of parrafos) {
+            console.log(elements.innerHTML);
+        }*/
+
+        /*//getElementByClassName
+        let parrafos = document.getElementsByClassName('azul');
+        console.log(N° de párrafos: ${parrafos.length});
+
+        for (const elements of elementos) {
+            console.log(elements.innerHTML);
+        }*/
+
+        //guerySelectroAll
+
+        /*let elementos = document.querySelectorAll('h1.azul');
+
+        console.log(N° de elementos: ${elementos.length});
+
+        for (const elements of elementos){
+            console.log(elements.innerHTML);
+        }*/
+
+        /*let elementos = document.querySelector('p.azul'); //Extra el primero que encuentra en todos los elementos
+
+            console.log(elements.innerHTML);*/
+        
+    </script>
+    
+</body>
+</html>

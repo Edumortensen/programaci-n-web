@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo con múltiples eventos</title>
+    <style>
+        input {
+            display: block;
+            margin: 10px 0;
+            padding: 8px;
+            width: 200px;
+            border: 1px solid #ccc;
+        }
+        input:focus {
+            border-color: blue;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de Eventos y Cookies</h1>
+
+    <!-- Enlace con target -->
+    <a href="https://www.google.com" target="_blank">Ir a Google (nueva pestaña)</a>
+
+    <br><br>
+
+    <!-- Campo de entrada para focus/blur -->
+    <input type="text" id="nombre" placeholder="Escribe tu nombre">
+
+    <!-- Botón para guardar cookies -->
+    <button id="guardarCookie">Guardar Nombre en Cookies</button>
+    <button id="leerCookie">Leer Nombre de las Cookies</button>
+    <p id="mensaje"></p>
+
+    <!-- Botón con addEventListener -->
+    <button id="botonListener">Haz clic aquí</button>
+
+    <!-- Botón con onclick directo -->
+    <button onclick="mostrarAlerta()">Haz clic (onClick)</button>
+
+    <script>
+        // Evento Focus y Blur
+        const nombreInput = document.getElementById('nombre');
+
+        nombreInput.addEventListener('focus', () => {
+            console.log('El campo tiene el foco');
+        });
+
+        nombreInput.addEventListener('blur', () => {
+            console.log('El campo perdió el foco');
+        });
+
+        // Manejo de Cookies
+        const guardarBtn = document.getElementById('guardarCookie');
+        const leerBtn = document.getElementById('leerCookie');
+        const mensaje = document.getElementById('mensaje');
+
+        guardarBtn.addEventListener('click', () => {
+            const nombre = nombreInput.value;
+            if (nombre) {
+                document.cookie = `nombre=${nombre}; path=/; max-age=3600`; // 1 hora
+                mensaje.textContent = `¡Nombre "${nombre}" guardado en las cookies!`;
+            } else {
+                mensaje.textContent = 'Por favor, escribe un nombre antes de guardar.';
+            }
+        });
+
+        leerBtn.addEventListener('click', () => {
+            const cookies = document.cookie.split('; ').find(row => row.startsWith('nombre='));
+            const nombreCookie = cookies ? cookies.split('=')[1] : null;
+
+            if (nombreCookie) {
+                mensaje.textContent = `El nombre guardado en cookies es: "${nombreCookie}"`;
+            } else {
+                mensaje.textContent = 'No hay ningún nombre guardado en las cookies.';
+            }
+        });
+
+        // AddEventListener para clic en el botón
+        const botonListener = document.getElementById('botonListener');
+
+        botonListener.addEventListener('click', (event) => {
+            alert('¡Hiciste clic en el botón!');
+            console.log('Elemento que disparó el evento:', event.target);
+        });
+
+        // Función para onclick
+        function mostrarAlerta() {
+            alert('¡Este es un mensaje desde onclick en el HTML!');
+        }
+    </script>
+</body>
+</html>

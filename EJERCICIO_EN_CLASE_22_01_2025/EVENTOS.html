@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Control Interactivo</title>
+</head>
+<body>
+  <header>
+    <h1 id="titulo-pagina">Bienvenido al Panel de Control Interactivo</h1>
+  </header>
+
+  <button id="mostrar-panel" onclick="togglePanel()">Mostrar Panel</button>
+
+  <div id="panel-control">
+    <h2>Panel de Configuración</h2>
+
+    <label for="tema">Tema de la Página:</label>
+    <select id="tema" onclick="cambiarTema()">
+      <option value="white">Claro</option>
+      <option value="gray">Oscuro</option>
+      <option value="blue">Azul</option>
+    </select>
+
+    <br><br>
+
+    <label for="entrada-titulo">Actualizar Título:</label>
+    <input type="text" id="entrada-titulo" placeholder="Nuevo título" onclick="actualizarTitulo()">
+
+    <br><br>
+
+    <label for="habilitar-comentarios">
+      <input type="checkbox" id="habilitar-comentarios" checked onclick="habilitarComentarios()">
+      Habilitar Área de Comentarios
+    </label>
+
+    <textarea id="comentarios"></textarea>
+
+    <br><br>
+
+    <label for="nuevo-elemento">Agregar a la Lista:</label>
+    <input type="text" id="nuevo-elemento" placeholder="Nuevo elemento">
+    <button id="agregar-elemento" onclick="agregarElemento()">Agregar</button>
+
+    <ul id="lista-elementos">
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+    </ul>
+  </div>
+
+  <script>
+    function togglePanel() {
+      const panelControl = document.getElementById('panel-control');
+      const mostrarPanelBtn = document.getElementById('mostrar-panel');
+      const estaVisible = panelControl.style.display === 'block';
+      panelControl.style.display = estaVisible ? 'none' : 'block';
+      mostrarPanelBtn.textContent = estaVisible ? 'Mostrar Panel' : 'Ocultar Panel';
+    }
+
+    function cambiarTema() {
+      const temaSelect = document.getElementById('tema');
+      document.body.style.backgroundColor = temaSelect.value;
+    }
+
+    function actualizarTitulo() {
+      const entradaTitulo = document.getElementById('entrada-titulo');
+      const tituloPagina = document.getElementById('titulo-pagina');
+      tituloPagina.textContent = entradaTitulo.value || 'Bienvenido al Panel de Control Interactivo';
+    }
+
+    function habilitarComentarios() {
+      const habilitarComentariosCheckbox = document.getElementById('habilitar-comentarios');
+      const comentariosTextarea = document.getElementById('comentarios');
+      comentariosTextarea.disabled = !habilitarComentariosCheckbox.checked;
+    }
+
+    function agregarElemento() {
+      const nuevoElementoInput = document.getElementById('nuevo-elemento');
+      const listaElementos = document.getElementById('lista-elementos');
+      const nuevoElementoTexto = nuevoElementoInput.value.trim();
+      if (nuevoElementoTexto) {
+        const nuevoElemento = document.createElement('li');
+        nuevoElemento.textContent = nuevoElementoTexto;
+        listaElementos.appendChild(nuevoElemento);
+        nuevoElementoInput.value = '';
+      }
+    }
+    document.getElementById('lista-elementos').addEventListener('click', (e) => {
+      if (e.target.tagName === 'LI') {
+        e.target.remove();
+      }
+    });
+  </script>
+</body>
+</html>
+

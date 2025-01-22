@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio Automático de Imágenes</title>
+</head>
+<body>
+    <h1 id="titulo" class="titles">Cambio Automático de Imágenes</h1>
+    <img id="imagen" src="img/th (1).jpeg" alt="Imagen" style="width:300px; height:auto;">
+    <script>
+        const imagenes = [
+            'img/th (1).jpeg',
+            'img/th (2).jpeg',
+            'img/th.jpeg',
+            'img/th (3).jpeg',
+            'img/th (4).jpeg'
+        ];
+
+        let indice = 0;
+        function cambiarImagen() {
+            for (let i = 0; i < imagenes.length; i++) {
+                if (i === (indice + 1) % imagenes.length) {
+                    document.getElementById('imagen').src = imagenes[i];
+                    indice = i; 
+                    break;
+                }
+            }
+        }
+
+        setInterval(cambiarImagen, 2000);
+    </script>
+</body>
+</html>
+
